@@ -67,7 +67,7 @@ for bed in os.listdir(os.getcwd()):
 
         # Verifica padrões específicos no arquivo para identificar reads polimórficos
         for chave_final, valor in conta_padrao.items():
-            if valor % 2 == 0 and valor >= 6:
+            if valor % 2 == 0 and valor >= 10:
                 cigar_1 = chave_final.split('_')[1]
                 c = Cigar(cigar_1)
                 parser = c.items()
